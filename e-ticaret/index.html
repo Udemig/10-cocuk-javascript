@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>E-Ticaret</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- yan içerik -->
+    <div class="sidebar">
+      <div class="user">
+        <img src="/images/Avatar.png" />
+        <span>Selam, Furkan</span>
+      </div>
+
+      <div class="category-list">
+        <h5>#MAĞAZA</h5>
+        <!-- Kategori Elemanı -->
+        <div class="category">
+          <div class="icon">
+            <img src="/images/light-bulb.png" />
+          </div>
+          <span>Ürünler</span>
+        </div>
+        <!-- Kategori Elemanı -->
+        <div class="category">
+          <div class="icon">
+            <img src="/images/heart.png" />
+          </div>
+          <span>Beğeniler</span>
+        </div>
+        <!-- Kategori Elemanı -->
+        <div class="category">
+          <div class="icon">
+            <img src="/images/Apple.png" />
+          </div>
+          <span>Yiyecekler</span>
+        </div>
+      </div>
+
+      <div class="category-list">
+        <h5>#Kişisel</h5>
+        <!-- Kategori Elemanı -->
+        <div class="category">
+          <div class="icon">
+            <img src="/images/heart.png" />
+          </div>
+          <span>Sepet</span>
+        </div>
+        <!-- Kategori Elemanı -->
+        <div class="category">
+          <div class="icon">
+            <img src="/images/tag.png" />
+          </div>
+          <span>Kuponlar</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ana içerik -->
+    <div class="main">
+      <div class="category-sec">
+        <h1>Kategoriler</h1>
+
+        <div class="categories">
+          <input type="radio" name="cat" id="cat1" />
+          <label for="cat1">Hepsi</label>
+
+          <input type="radio" name="cat" id="cat2" />
+          <label for="cat2">Elektronik</label>
+
+          <input type="radio" name="cat" id="cat3" />
+          <label for="cat3">Erkek Giyim</label>
+
+          <input type="radio" name="cat" id="cat4" />
+          <label for="cat4">Kadın Giyim</label>
+        </div>
+      </div>
+
+      <div class="products">
+        <h1>Ürünler</h1>
+
+        <div id="list" class="product-list">
+          <!-- js den kartlar gönderilecek -->
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

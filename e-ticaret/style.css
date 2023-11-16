@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  background: #1b1a1d;
+  color: #ffffff;
+  font-family: 'poppins';
+  overflow: hidden;
+}
+
+.sidebar {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  background: #28272b;
+  padding: 50px 42px;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.user img {
+  width: 96px;
+  height: 96px;
+}
+
+.user span {
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 20px;
+}
+
+.category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.category-list h5 {
+  font-size: 18px;
+  color: #ffa049;
+  font-weight: normal;
+}
+
+.category-list .category {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-right: 10px;
+  color: gray;
+  cursor: pointer;
+}
+
+.category-list .category:hover {
+  background: rgb(78, 77, 77);
+  border-radius: 50px;
+}
+
+.category:nth-of-type(1) {
+  color: white;
+}
+
+.category:nth-of-type(1) .icon {
+  background: #ffa049;
+  color: white;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 10px;
+  background: rgb(78, 77, 77);
+}
+
+.icon img {
+  width: 30px;
+  height: 30px;
+}
+
+/* 900 px altında devreye giren stiller */
+@media (max-width: 900px) {
+  .category span,
+  .category-list h5,
+  .user span {
+    display: none;
+  }
+
+  .sidebar {
+    padding: 30px;
+  }
+
+  .user img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Anaiçerik */
+.main {
+  padding: 20px;
+  width: 100%;
+}
+
+.main h1 {
+  margin-top: 40px;
+  font-size: 26px;
+}
+
+.category-sec {
+  width: 100%;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+/* inputları sakla */
+.categories input {
+  display: none;
+}
+
+/* seçili olan kategorini arkaplanını değiş */
+.categories input:checked + label {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  filter: drop-shadow(2px 2px 30px rgb(227, 226, 226));
+}
+
+.categories label {
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 1px solid gray;
+  cursor: pointer;
+  color: gray;
+}
+
+/* Karttlarr */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 50px;
+  height: 70vh;
+  overflow: auto;
+}
+
+.card {
+  background-color: rgb(230, 230, 230);
+  width: 250px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 15px;
+  gap: 10px;
+}
+
+.card button {
+  width: 100%;
+  background: #1b1a1d;
+  color: #ffffff;
+  border: none;
+  padding: 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: poppins;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.3s;
+}
+
+.card img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.card button:hover {
+  background: #28272b;
+}
+
+.card button:active {
+  scale: 0.83;
+}
+
+button p {
+  color: rgb(17, 204, 17);
+}
